@@ -13,7 +13,7 @@ class GuessNumber {
     
     while (numGuess < maxGuess)
     {
-      Console.WriteLine("Secret Number:" + secretNumber);
+      // Console.WriteLine("Secret Number:" + secretNumber);
       Console.WriteLine("Please guess an integer between 0 and 99.\n");
       guess = Convert.ToInt32(Console.ReadLine());
       Console.WriteLine("Guess" + guess);
@@ -33,9 +33,9 @@ class GuessNumber {
         break; // Keyword to immeditaely exit a loop.
       }
 
-      if (numGuess >= maxGuess)
+      if (numGuess > maxGuess)
       {
-        Console.WriteLine("You have lost the game.\n your grandparents are dissapointed in you.\n")
+        Console.WriteLine("You have lost the game.\n your grandparents are dissapointed in you.\n");
       }
 
     }

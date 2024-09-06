@@ -35,7 +35,7 @@ class GuessNumber {
 
       if (numGuess >= maxGuess)
       {
-        Console.WriteLine("You have lost the game.\n your grandparents are dissapointed in you")
+        Console.WriteLine("You have lost the game.\n your grandparents are dissapointed in you.\n")
       }
 
     }

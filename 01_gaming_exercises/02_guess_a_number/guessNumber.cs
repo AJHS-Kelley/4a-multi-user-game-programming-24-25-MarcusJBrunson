@@ -16,7 +16,7 @@ class GuessNumber {
       // Console.WriteLine("Secret Number:" + secretNumber);
       Console.WriteLine("Please guess an integer between 0 and 99.\n");
       guess = Convert.ToInt32(Console.ReadLine());
-      Console.WriteLine("Guess" + guess);
+      Console.WriteLine("Guess " + guess);
 
       numGuess++;
       if(guess < secretNumber)

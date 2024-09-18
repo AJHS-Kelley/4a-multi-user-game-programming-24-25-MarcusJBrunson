@@ -13,6 +13,7 @@ class Template {
     
     // Rules for Rock,Paper, and scissors game
     Console.WriteLine("Rock beats Scissors, Scissors beats Paper, and Paper beats Rock.\n The winner scores a point. If each player picks the same no points are awarded.\n The first player to five points wins.\n")
+    
     // User inputs their name
     Console.WriteLine("Your player name is")
     Console.ReadLine();

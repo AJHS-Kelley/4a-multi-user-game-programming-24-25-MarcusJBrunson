@@ -10,10 +10,6 @@ class Template {
     int cpuScore = 0;
     string cpuChoice = "";
 
-    string rock;
-    string paper;
-    string scissors;
-
     // User inputs their name
     Console.WriteLine("Welcome to the rock paper, scissors bot!\n");
     Console.WriteLine("Please type your player name and press ENTER.\n");
@@ -48,7 +44,7 @@ class Template {
   while (playerScore < 5 && cpuScore < 5)
     {
       Console.WriteLine("Please select rock, paper, or scissors. Type your answer and press ENTER.\n");
-      Console.WriteLine($"Your score: {playerScore}\nCPU score: {cpuScore}/n");
+      Console.WriteLine($"Your score: {playerScore}\nCPU score: {cpuScore}\n");
       playerChoice = Console.ReadLine().ToLower();
       if (playerChoice != "rock" && playerChoice != "paper" & playerChoice != "scissors")
       {

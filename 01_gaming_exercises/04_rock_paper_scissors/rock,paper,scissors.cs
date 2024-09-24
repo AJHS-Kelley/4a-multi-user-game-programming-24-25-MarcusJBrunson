@@ -10,9 +10,9 @@ class Template {
     int cpuScore = 0;
     string cpuChoice = "";
 
-    // int rock = 0;
-    // int paper = 1;
-    // int scissors = 2;
+    string rock;
+    string paper;
+    string scissors;
 
     // User inputs their name
     Console.WriteLine("Welcome to the rock paper, scissors bot!\n");

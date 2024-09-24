@@ -96,9 +96,47 @@ class Template {
         Console.WriteLine("It's a draw.\n");
       }
 
+      if(playerChoice == "paper" && cpuChoice == "scissors")
+      {
+        Console.WriteLine($"you chose {playerchoice} and the CPU chose {cpuChoice}.\n");
+        Console.WriteLine("The CPU wins.\n");
+        cpuScore++;
+      }
+      else if (playerChoice == "paper" && cpuChoice == "rock")
+      {
+        Console.WriteLine($"you chose {playerchoice} and the CPU chose {cpuChoice}.\n");
+        Console.WriteLine("You win.\n");
+        playerScore++;
+      }
+      else if  (playerChoice == "paper" && cpuChoice == "paper")
+      {
+        Console.WriteLine($"you chose {playerchoice} and the CPU chose {cpuChoice}.\n");
+        Console.WriteLine("It's a draw.\n");
+      }
 
+      if(playerChoice == "scissors" && cpuChoice == "rock")
+      {
+        Console.WriteLine($"you chose {playerchoice} and the CPU chose {cpuChoice}.\n");
+        Console.WriteLine("The CPU wins.\n");
+        cpuScore++;
+      }
+      else if (playerChoice == "scissors" && cpuChoice == "paper")
+      {
+        Console.WriteLine($"you chose {playerchoice} and the CPU chose {cpuChoice}.\n");
+        Console.WriteLine("You win.\n");
+        playerScore++;
+      }
+      else if  (playerChoice == "scissors" && cpuChoice == "scissors")
+      {
+        Console.WriteLine($"you chose {playerchoice} and the CPU chose {cpuChoice}.\n");
+        Console.WriteLine("It's a draw.\n");
+      }
       
 
+
+      
+    // My code with me trying on my own before we went over it in class.(Was not finished)
+    
       //  if(playerChoice = rock && cpuChoice = scissors)
       //  {
       //     Console.WriteLine("Rock beat Scissors.\n");

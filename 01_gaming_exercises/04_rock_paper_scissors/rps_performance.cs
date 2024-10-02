@@ -16,14 +16,12 @@ class Template {
     Console.WriteLine("How many loops do you need\nType an INTEGER and press enter.\n");
     loopReqs = Convert.ToInt32(Console.ReadLine());
 
-
-
+  Random rnd = new Random();
   while (loopCount < loopReqs)
   {
 
       // Allow CPU to select randomly
-      Random rnd = new Random();
-      int cpuRand = rnd.Next(0,2);
+      int cpuRand = rnd.Next(0,3);
 
       if (cpuRand == 0)
       {
@@ -41,9 +39,9 @@ class Template {
       {
         Console.WriteLine("Unable to determine CPU choice.\n");
       }
-      // Console.WriteLine("CPU choice" + cpuChoice);
+      Console.WriteLine("CPU choice" + cpuChoice);
 
-      int playerRand = rnd.Next(0,2);
+      int playerRand = rnd.Next(0,3);
 
       if (playerRand == 0)
       {
@@ -61,65 +59,74 @@ class Template {
       {
         Console.WriteLine("Unable to determine CPU choice.\n");
       }
-      // Console.WriteLine("player choice" + playerChoice);
+      Console.WriteLine("player choice" + playerChoice);
 
 
       // Compare the two choices and determine a winner.
       if(playerChoice == "rock" && cpuChoice == "paper")
       {
-        // Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
-        // Console.WriteLine("The CPU wins.\n");
-        cpuScore++;
+        Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+        Console.WriteLine("The CPU wins.\n");
+        cpuScore = cpuScore + 1;
+        // cpuScore++;
       }
       else if (playerChoice == "rock" && cpuChoice == "scissors")
       {
-        // Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
-        // Console.WriteLine("You win.\n");
-        playerScore++;
+        Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+        Console.WriteLine("You win.\n");
+        playerScore = playerScore + 1;
+        // playerScore++;
       }
       else if  (playerChoice == "rock" && cpuChoice == "rock")
       {
-        // Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
-        // Console.WriteLine("It's a draw.\n");
-        numDraws++;
+        Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+        Console.WriteLine("It's a draw.\n");
+        numDraws = numDraws + 1;
+        // numDraws++;
       }
 
       if(playerChoice == "paper" && cpuChoice == "scissors")
       {
-        // Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
-        // Console.WriteLine("The CPU wins.\n");
-        cpuScore++;
+        Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+        Console.WriteLine("The CPU wins.\n");
+        cpuScore = cpuScore + 1;
+        // cpuScore++;
       }
       else if (playerChoice == "paper" && cpuChoice == "rock")
       {
-        // Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
-        // Console.WriteLine("You win.\n");
-        playerScore++;
+        Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+        Console.WriteLine("You win.\n");
+        playerScore = playerScore + 1;
+        // playerScore++;
       }
       else if  (playerChoice == "paper" && cpuChoice == "paper")
       {
-        // Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
-        // Console.WriteLine("It's a draw.\n");
-        numDraws++;
+        Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+        Console.WriteLine("It's a draw.\n");
+        numDraws = numDraws + 1;
+        // numDraws++;
       }
 
       if(playerChoice == "scissors" && cpuChoice == "rock")
       {
-        // Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
-        // Console.WriteLine("The CPU wins.\n");
-        cpuScore++;
+        Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+        Console.WriteLine("The CPU wins.\n");
+        cpuChoice = cpuChoice + 1;
+        // cpuScore++;
       }
       else if (playerChoice == "scissors" && cpuChoice == "paper")
       {
-        // Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
-        // Console.WriteLine("You win.\n");
-        playerScore++;
+        Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+        Console.WriteLine("You win.\n");
+        playerScore = playerScore + 1;
+        // playerScore++;
       }
       else if  (playerChoice == "scissors" && cpuChoice == "scissors")
       {
-        // Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
-        // Console.WriteLine("It's a draw.\n");
-        numDraws++;
+        Console.WriteLine($"you chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+        Console.WriteLine("It's a draw.\n");
+        numDraws = numDraws + 1;
+        // numDraws++;
       }
       loopCount++;
 

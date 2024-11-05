@@ -6,35 +6,26 @@ class Collections {
 
 
 
-
-/*
-In C# an collection is an ARRAY
--- Each ITEM IN THE ARRAY IS AN ELEMENT 
--- NUMBER OF ELEMENTS IN THE ARRAY CANNOT BE CHANGED 
--- CONTENTS OF EACH ELEMENT CAN CHANGE 
--- ARRAYS ARE ORDERED, MEANING EACH ITEM HAS A FIXED POSITION 
--- POSITION OF THE ELEMENT IS THE INDEX 
--- FIRST ELEMENT INDEX IS 0.
-*/
-
-
-
-
-
-
-
+  /*
+  In C# an collection is an ARRAY
+  -- Each ITEM IN THE ARRAY IS AN ELEMENT 
+  -- NUMBER OF ELEMENTS IN THE ARRAY CANNOT BE CHANGED 
+  -- CONTENTS OF EACH ELEMENT CAN CHANGE 
+  -- ARRAYS ARE ORDERED, MEANING EACH ITEM HAS A FIXED POSITION 
+  -- POSITION OF THE ELEMENT IS THE INDEX 
+  -- FIRST ELEMENT INDEX IS 0.
+  */
 
   // Declaring and defending an array 
   string [] breakfastFoods = {"Bacon", "Eggs", "Cold Pizza", "Apple jacks", "Oatmeal"};
   int[] testScores = {0, 25, 15, 75, 99};
   double[] GPA = {0.27D, 1.99D, 4.02D, 0.0D, 3.25D};
 
-
   // Print Array Contents
   // Console.WriteLine("The elements of each array are;\n");
   // Console.WriteLine("breakfastFoods:\n" + String.Join(",", breakfastFoods));
   // Console.WriteLine(); // Print an empty line to the screen
-/*
+  /*
   // Print Array Contents
   Console.WriteLine("The elements of each array are:\n");
   Console.WriteLine("breakfastFoods:\n" + String.Join("\n", breakfastFoods));
@@ -52,7 +43,6 @@ In C# an collection is an ARRAY
   // Shortcut to Access Last item in an Array 
   // Console.WriteLine("The last element of breakfastFoods is: " + breakfastFoods[breakfastFoods.Length -1]);
   // Console.WriteLine("The last element of testScores is: " + testScores[testScores.Length -1]);
-  // Console.WriteLine("The last element of GPA is: " + GPA[GPA.Length -1]);
 
   // CHANGING ELEMENTS IN THE ARRAY
   breakfastFoods[2] = "Frosted Flakes";
@@ -61,7 +51,8 @@ In C# an collection is an ARRAY
   Console.WriteLine("The elements of each array are;\n");
   Console.WriteLine("breakfastFoods:\n" + String.Join(",", breakfastFoods));
   Console.WriteLine(); // Print an empty line to the screen
-*/
+  */
+  
   // Common erros with arrays 
   // Console.WriteLine(breakfastFoods[99]); // Index out of bounds -- Accessing index that does not exist in the array.
 
@@ -75,18 +66,19 @@ In C# an collection is an ARRAY
 
   Array.Sort(intArr);
   Array.Sort(zooanimals);
+  // Array.Sort will sort string arrays ALPHABETICALLY A-Z and numerical arrays from LEAST to GREATEST
   Console.WriteLine("The elements of each array are:\n");
   Console.WriteLine("zooanimals:\n" + String.Join("\n", zooanimals));
   Console.WriteLine(); // Print an empty line to the screen
 
-  Console.WriteLine("The elements of each array are:\n");
-  Console.WriteLine("intArr:\n" + String.Join("\n", intArr));
-  Console.WriteLine(); // Print an empty line to the screen
-
-  // Finding the MIN, MAX, and SUM for numerical arrays.
+// Finding the MIN, MAX, and SUM for numerical arrays.
   Console.WriteLine("The Minium value for intArr is: " + intArr.Min());
   Console.WriteLine("The MAXIUM value for intArr is: " + intArr.Max());
   Console.WriteLine("The SUM value for intArr is: " + intArr.Sum());
+
+  Console.WriteLine("The elements of each array are:\n");
+  Console.WriteLine("intArr:\n" + String.Join("\n", intArr));
+  Console.WriteLine(); // Print an empty line to the screen
 
 
     } // DO NOT DELETE EVER, 3 SPACES INDENTED FROM LEFT

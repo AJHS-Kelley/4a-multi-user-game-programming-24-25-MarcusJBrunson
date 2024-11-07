@@ -80,11 +80,11 @@ class Collections {
   // Console.WriteLine("intArr:\n" + String.Join("\n", intArr));
   // Console.WriteLine(); // Print an empty line to the screen
 
-   // Array list --> Basically an array you can add/remove elements from. 
+   // Array list --> Basically an array you can add/Remove elements from. 
    var exampleArrList = new ArrayList(); // Create an new ArrayList.
    // Adding elements to an ArrayList use .Add()
    exampleArrList.Add(5);
-   exampleArrList.Add("STAR WARS");
+   exampleArrList.Add("STAR WARS REVENGE OF THE SITH");
    exampleArrList.Add(false);
    exampleArrList.Add(1.25D);
 
@@ -102,14 +102,47 @@ class Collections {
     // exampleArrList.Insert(3, "Ogres are like onions.\n");
     // exampleArrList.Insert(0, -99);
 
-    // .remove(value) removes the first OCCURENCE of the item from the ArrayList
+    // .Remove(value) Removes the first OCCURENCE of the item from the ArrayList
     var newList = new ArrayList()
     {
       -10, 10, 15, -25, -10, 25, 33, -25, 40
     };
   // Console.WriteLine(newList[0]);
-  // newList.remove(-10);
+  // newList.Remove(-10);
   // Console.WriteLine(newList[0]);
-  
+
+  // Deleting based on index number
+  // RemoveAt(value) --> deletes the item at the specified index
+  // newList.RemoveAt(4);
+
+  // Delete the first item 
+  // newList.RemoveAt(0);
+
+  // Delete the last item
+  // newList.RemoveAt(newList-Length - 1);
+
+  // Remove an entire range of elements.
+  // .RemoveRange(firstIndex, lastIndex)
+  // newList.RemoveRange (3, 8)
+
+  // Shortcut to Delete from one item through end of list.
+  // newList.RemoveRange(4, newList.Length - 1);
+
+  // Does the arrayList contain a certain value.
+  // Contains (value) returns ture if the list has that value, false otherwise.
+  var playerInventory = new ArrayList()
+    {
+    "Sword", "Shield", "Bazooka", "1-up Power-up", "Death notebook", "Potato"
+    };
+
+  Console.WriteLine(playerInventory.Contains("Fishing pole"));
+  Console.WriteLine(playerInventory.Contains("Sword"));
+
+  if (playerInventory.Contains("Blue Key"))
+  {
+    // Do Something
+  }
+
+
     } // DO NOT DELETE EVER, 3 SPACES INDENTED FROM LEFT
 } // DO NOT DELETE EVER, ALWAYS TOUCHING LRFT MARGIN

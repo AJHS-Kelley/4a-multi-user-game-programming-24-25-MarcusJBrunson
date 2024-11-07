@@ -17,9 +17,9 @@ class Collections {
   */
 
   // Declaring and defending an array 
-  string [] breakfastFoods = {"Bacon", "Eggs", "Cold Pizza", "Apple jacks", "Oatmeal"};
-  int[] testScores = {0, 25, 15, 75, 99};
-  double[] GPA = {0.27D, 1.99D, 4.02D, 0.0D, 3.25D};
+  // string [] breakfastFoods = {"Bacon", "Eggs", "Cold Pizza", "Apple jacks", "Oatmeal"};
+  // int[] testScores = {0, 25, 15, 75, 99};
+  // double[] GPA = {0.27D, 1.99D, 4.02D, 0.0D, 3.25D};
 
   // Print Array Contents
   // Console.WriteLine("The elements of each array are;\n");
@@ -61,25 +61,55 @@ class Collections {
 
   // COMMON ARRAY METHODS -- Ways to work with the array data.
   // Sorting an Array
-  int[] intArr = {-25, 50, 68, 523, -1205, 99918582, -1, 55, 0, 124};
-  string[] zooanimals = {"Tiger", "Lion", "Monkey", "Zebra", "Iguana"};
+  // int[] intArr = {-25, 50, 68, 523, -1205, 99918582, -1, 55, 0, 124};
+  // string[] zooanimals = {"Tiger", "Lion", "Monkey", "Zebra", "Iguana"};
 
-  Array.Sort(intArr);
-  Array.Sort(zooanimals);
+  // Array.Sort(intArr);
+  // Array.Sort(zooanimals);
   // Array.Sort will sort string arrays ALPHABETICALLY A-Z and numerical arrays from LEAST to GREATEST
-  Console.WriteLine("The elements of each array are:\n");
-  Console.WriteLine("zooanimals:\n" + String.Join("\n", zooanimals));
-  Console.WriteLine(); // Print an empty line to the screen
+  // Console.WriteLine("The elements of each array are:\n");
+  // Console.WriteLine("zooanimals:\n" + String.Join("\n", zooanimals));
+  // Console.WriteLine(); // Print an empty line to the screen
 
-// Finding the MIN, MAX, and SUM for numerical arrays.
-  Console.WriteLine("The Minium value for intArr is: " + intArr.Min());
-  Console.WriteLine("The MAXIUM value for intArr is: " + intArr.Max());
-  Console.WriteLine("The SUM value for intArr is: " + intArr.Sum());
+  // Finding the MIN, MAX, and SUM for numerical arrays.
+  // Console.WriteLine("The Minium value for intArr is: " + intArr.Min());
+  // Console.WriteLine("The MAXIUM value for intArr is: " + intArr.Max());
+  // Console.WriteLine("The SUM value for intArr is: " + intArr.Sum());
 
-  Console.WriteLine("The elements of each array are:\n");
-  Console.WriteLine("intArr:\n" + String.Join("\n", intArr));
-  Console.WriteLine(); // Print an empty line to the screen
+  // Console.WriteLine("The elements of each array are:\n");
+  // Console.WriteLine("intArr:\n" + String.Join("\n", intArr));
+  // Console.WriteLine(); // Print an empty line to the screen
 
+   // Array list --> Basically an array you can add/remove elements from. 
+   var exampleArrList = new ArrayList(); // Create an new ArrayList.
+   // Adding elements to an ArrayList use .Add()
+   exampleArrList.Add(5);
+   exampleArrList.Add("STAR WARS");
+   exampleArrList.Add(false);
+   exampleArrList.Add(1.25D);
 
+   // Create ArrayList with Values
+   vae exampleArrList2 = new ArrayList()
+    {
+      -10, "Last Name", "Purple", false, 25.25D, 195000, 0.0D
+    }; 
+
+    // Console.WriteLine(exampleArrList[2]);
+    // Console.WriteLine(exampleArrList2[5]);
+
+    // Inserting to a specific position in the arrayList 
+    // use .Insert(index, value)
+    // exampleArrList.Insert(3, "Ogres are like onions.\n");
+    // exampleArrList.Insert(0, -99);
+
+    // .remove(value) removes the first OCCURENCE of the item from the ArrayList
+    var newList = new ArrayList()
+    {
+      -10, 10, 15, -25, -10, 25, 33, -25, 40
+    };
+  // Console.WriteLine(newList[0]);
+  // newList.remove(-10);
+  // Console.WriteLine(newList[0]);
+  
     } // DO NOT DELETE EVER, 3 SPACES INDENTED FROM LEFT
 } // DO NOT DELETE EVER, ALWAYS TOUCHING LRFT MARGIN

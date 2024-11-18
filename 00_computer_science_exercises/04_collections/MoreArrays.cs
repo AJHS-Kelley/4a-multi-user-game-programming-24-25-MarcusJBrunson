@@ -2,6 +2,10 @@ using System;
 using System.Linq;
 using
 
+0 references
+class MoreArrays
+0 references
+
 class Template {
   static void Main() { // DO NOT DELETE!
 
